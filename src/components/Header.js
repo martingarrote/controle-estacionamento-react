@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   return <header>
             <h1>CONTROLE DE ESTACIONAMENTO</h1>
             <nav>
-                <ul id="nav-links">
-                    <li><a href="vagas">VAGAS</a></li>
-                    <li><a href="reservas">RESERVAS</a></li>
+                <ul>
+                    <li><Link to="/">VAGAS</Link></li>
+                    <li><Link to="/reservas">RESERVAS</Link></li>
                 </ul>
             </nav>
         </header>
