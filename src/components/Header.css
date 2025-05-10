@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    padding: 2rem 4rem;
+    font-family: var(--title-font);
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    user-select: none;
+}
+
+nav, nav a {
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav li:hover {
+    opacity: 0.5;
+    transition: 0.2s opacity;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem !important;
+    }
+}
