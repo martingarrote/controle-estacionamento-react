@@ -11,7 +11,7 @@ const ParkingLot = () => {
         const spot = spots.find(spot => spot.number === number);
 
         if (spot && spot.status === 'free') {
-            navigate(`/reservas/${number}`);
+            navigate(`/vagas/reservar/${number}`);
         }
     };
 
