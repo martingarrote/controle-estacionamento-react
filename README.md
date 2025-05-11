@@ -1,5 +1,5 @@
 <h1 align="center">
-  <!-- <img src="./assets/images/controle-estacionamento.gif" height="auto" width="auto" alt="" /><br> -->
+  <img src="./src/assets/controle-estacionamento-react.gif" height="auto" width="auto" alt="" /><br>
   Controle de Estacionamento (React)
 </h1>
 
@@ -21,7 +21,7 @@ Esse projeto consiste em uma aplicação web para controle do estacionamento de 
 
 ## Arquitetura
 
-Esse projeto consiste em uma aplicação Web que utiliza **React** cuja arquitetura é **Component-Based**. O produto final se trata de uma **Single Page Application (SPA)**, possibilitando navegação prática e flúida. 
+Esse projeto consiste em uma aplicação Web desenvolvida com **React**, com uma arquitetura **Component-Based**. Tem como produto final uma **Single Page Application (SPA)** que proporciona navegação fluída sem carregamentos através de roteamento **client-side.**
 
 A aplicação é <u>composta exclusivamente pelo frontend</u>, utilizando o React para a construção da interface. O armazenamento de dados será realizado localmente no navegador, utilizando o `localStorage` para persistência de dados entre sessões.
 
