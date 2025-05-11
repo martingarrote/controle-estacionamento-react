@@ -1,0 +1,34 @@
+main {
+    display: block;
+    margin: 2rem;
+    border: none;
+    border-radius: 1rem;
+    width: auto;
+    grid-area: main;
+    overflow-y: auto;
+    background-color: white;
+}
+
+section {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+section p {
+    margin-top: 0.2rem;
+    font-size: 1.4rem;
+}
+
+.parking-lot {
+    margin: auto;
+    padding: 3rem;
+    width: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+}
