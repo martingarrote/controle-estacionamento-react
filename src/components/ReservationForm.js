@@ -28,8 +28,18 @@ const ReservationForm = ({ spotNumber }) => {
         };
 
         createReservation(newReservation);
-        navigate('/reservas')
+        resetForm();
+        navigate('/reservas');
     };
+
+    const resetForm = () => {
+        setOwnerName('')
+        setApartmentNumber('')
+        setApartmentBlock('')
+        setVehicleModel('')
+        setVehicleSign('')
+        setVehicleColor('')
+    }
 
     return (
         <div id="form-container">
@@ -125,8 +135,8 @@ const ReservationForm = ({ spotNumber }) => {
                 </div>
 
                 <div className="form-actions">
-                <button type="reset">Limpar</button>
-                <button type="submit">Salvar</button>
+                    <button onClick={(resetForm)} type="reset">Limpar</button>
+                    <button type="submit">Salvar</button>
                 </div>
             </form>
         </div>
