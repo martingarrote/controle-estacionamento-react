@@ -18,6 +18,7 @@ function App() {
                             <Route path='/vagas' exact Component={HomePage} />
                             <Route path='/vagas/reservar/:spotNumber' exact Component={CreateReservationPage} />
                             <Route path='/reservas' exact Component={ReservationsListPage} />
+                            <Route path='*' exact Component={HomePage} />
 
                         </Routes>
                     </main>
