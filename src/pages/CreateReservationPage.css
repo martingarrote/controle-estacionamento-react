@@ -1,0 +1,17 @@
+#new-reservation #form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-reservation p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+#new-reservation p::after {
+    content: ' *';
+    font-size: 1.6rem;
+    color: red;
+}
