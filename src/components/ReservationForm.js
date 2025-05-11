@@ -32,6 +32,7 @@ const ReservationForm = ({ spotNumber }) => {
         navigate('/reservas');
     };
 
+    
     const resetForm = () => {
         setOwnerName('')
         setApartmentNumber('')
@@ -39,6 +40,11 @@ const ReservationForm = ({ spotNumber }) => {
         setVehicleModel('')
         setVehicleSign('')
         setVehicleColor('')
+    }
+    
+    const cancel = () => {
+        resetForm();
+        navigate('/vagas');
     }
 
     return (
@@ -52,6 +58,7 @@ const ReservationForm = ({ spotNumber }) => {
                     name="parkingSpotNumber"
                     value={spotNumber}
                     readOnly
+                    tabIndex={-1}
                 />
                 </div>
 
@@ -136,6 +143,7 @@ const ReservationForm = ({ spotNumber }) => {
 
                 <div className="form-actions">
                     <button onClick={(resetForm)} type="reset">Limpar</button>
+                    <button onClick={(cancel)} type="button">Cancelar</button>
                     <button type="submit">Salvar</button>
                 </div>
             </form>
