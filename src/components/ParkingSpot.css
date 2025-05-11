@@ -1,0 +1,44 @@
+.parking-spot {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    border: 0.1rem solid rgb(175, 175, 175);
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    user-select: none;
+    font-weight: 500;
+}
+
+.parking-spot:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 6px;
+    cursor: pointer;
+    transition: 0.1s box-shadow linear;
+}
+
+.parking-spot * {
+    pointer-events: none;
+}
+
+.ps-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.ps-status[data-status='free']::before {
+    content: 'Livre';
+}
+
+.ps-status[data-status='occupied']::before {
+    content: 'Ocupado';
+}
+
+.parking-spot:has(.ps-status[data-status="occupied"]) {
+    color: white;
+    background-color: rgb(255, 60, 60);
+    border-color: rgb(255, 60, 60);
+    cursor: not-allowed;
+    box-shadow: none;
+}
